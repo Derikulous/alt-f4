@@ -1,51 +1,66 @@
-section, nav, article, aside, hgroup, header, footer {
+header {
     display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: #1c1c1c;
+    -webkit-transition: padding .25s;
+    -moz-transition: padding .25s;
+    -ms-transition: padding .25s;
+    -o-transition: padding .25s;
+    transition: padding .25s;
+}
+
+#nav {
+display: block;
+position: relative;
+text-align: center;
+font-size: 14px;
+font-family: "Quattrocento", Century Gothic;
+color:#999999;
+margin: 0px auto;
+padding: 0px auto;
+}
+
+#nav a {
+    font-size: 14px;
+    font-family: Century Gothic;
+    color: #999999;
+    padding: 25px;
+    center: 0px;
+    position: relative;
+    text-indent: -9999px;
+    top: 10px;
+}
+
+#nav>a {
+    margin-top: 5px;
+    font-family: Century Gothic;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #888;
+    -webkit-transition: color .2s ease-in;
+    -moz-transition: color .2s ease-in;
+    -ms-transition: color .2s ease-in;
+    -o-transition: color .2s ease-in;
+    transition: color .2s ease-in;
+}
+
+#nav:hover>a {
+    color: #f7a9e5;
 }
 
 #logo {
 text-align: center;
 margin-right: auto;
 margin-left: auto;
+margin-top: 70px;
+margin-bottom: 30px;
 width:50%;
+z-index: 1;
 }
-
-#photo {
-text-align: center;
-margin:auto;
-width:100%;
-}
-
-#menu {
-top: -33px;
-width: 100%;
-text-align: center;
-font-size: 15px;
-font-family: Quattrocento, Century Gothic;
-color:#000000;
-margin: 20px 0 4px;
-padding: 0px 20px;
-}
-
-#menu a {
-    height: 16px;
-    left: -30px;
-    position: relative;
-    text-indent: -9999px;
-    top: 5px;
-    width: 17px;
-    color: #000000
-}
-
-#menu nav a {
-    background: no-repeat scroll 0 0 transparent;
-    height: 16px;
-    left: -50px;
-    position: absolute;
-    text-indent: -9999px;
-    top: 5px;
-    width: 17px;
-}
-
 
 form input {
     float: right;
@@ -66,3 +81,133 @@ form input {
     width: 100px;
 }
 
+.slider {
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 960px;
+  max-height: 640px;
+  overflow: hidden;
+}
+
+.button {
+  position: absolute;
+  display: block;
+  top: 20px;
+  margin: 0;
+  padding: 0;
+  z-index: 999;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.button:nth-child(1){
+left: 30px;
+}
+.button:nth-child(3){
+left: 60px;
+}
+.button:nth-child(5){
+left: 90px;
+}
+.button:nth-child(7){
+left: 120px;
+}
+
+.slider label{
+position: absolute;
+top: 20px;
+height: 12px;
+width: 12px;
+background: rgba(50, 50, 50, .5);
+border-radius: 7px;
+z-index: 100;
+border:1px solid #777;
+}
+
+
+.slider label:nth-child(2) {
+left: 30px;
+}
+
+.slider label:nth-child(4) {
+left: 60px;
+}
+
+.slider label:nth-child(6) {
+left: 90px;
+}
+
+.slider label:nth-child(8) {
+left: 120px;
+}
+
+.button:checked + label {
+background: rgba(0, 0, 0, .6);
+border-color: #eee;
+}
+
+
+.image-container {
+position: relative;
+left: 0;
+transition: left .3s ease-in;
+-moz-transition: left .3s ease-in;
+-o-transition: left .3s ease-in;
+-webkit-transition: left .3s ease-in;
+-ns-transition: left .3s ease-in;
+}
+
+.image-container img{
+  display: block;
+  float: left;
+}
+
+.four-images{
+  width: 400%;
+}
+
+.four-images img{
+  width: 25%;
+}
+
+.button:nth-child(1):checked ~ .image-container{
+left: 0;
+}
+
+.button:nth-child(3):checked ~ .image-container{
+left: -100%;
+}
+
+.button:nth-child(5):checked ~ .image-container{
+left: -200%;
+}
+
+.button:nth-child(7):checked ~ .image-container{
+left: -300%;
+}
+
+#description {
+    font-family: Century Gothic;
+    text-align: center;
+    float: center;
+    color: #000000;
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+#footer {
+margin-top: 10px;
+padding-top: 30px;
+text-align: center;
+float: center;
+font-size: 12px;
+font-family: Century Gothic;
+}
+
+#copyright {
+    font-size: 12px;
+    font-family: Century Gothic;
+    float: left;
+}
