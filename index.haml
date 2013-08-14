@@ -1,0 +1,26 @@
+!!!
+%html
+  %head
+    %link{:href => "style.css", :rel => "stylesheet", :type => "text/css"}/
+    %title
+      ALT+F4
+  %body
+    %ul#menu
+    .nav
+      %a{:href => "http://altf4shion.com/About/"} About
+      %a{:href => "http://altf4shion.com/contact/"} Contact
+      %a{:href => "http://altf4shion.com/"} Links
+      %a{:href => "https://twitter.com/alt+f4shion"} Twitter
+      %a{:href => "http://www.facebook.com/pages/alt+f4shion"} Facebook
+      %a{:href => "/contact"} Email
+    %form{:action => "http://altf4shion.com", :method => "get"}
+      %a{:href => "http://altf4shion.com/feed/"} RSS
+      %input{:name => "s", :onblur => "if(this.value=='') this.value=this.defaultValue;", :onfocus => "if(this.value==this.defaultValue) this.value='';", :type => "text", :value => "SEARCH"}/
+    #logo
+      %a{:href => "http://altf4shion.com", :title => "Alt+F4"}
+        %img{:alt => "Alt+F4", :src => "header.jpg"}/
+    #photo
+      %img{:src => "img/chengcheng8.jpg"}/
+    #footer.col-full
+      #copyright.col-left
+        %p Copyright Alt+F4 LLC 2013.

@@ -1,0 +1,64 @@
+section, nav, article, aside, hgroup, header, footer {
+  display: block;
+}
+
+#logo {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+}
+
+#photo {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+
+#menu {
+  top: -33px;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  font-family: Quattrocento, Century Gothic;
+  color: #000000;
+  margin: 20px 0 4px;
+  padding: 0px 20px;
+  a {
+    height: 16px;
+    left: -30px;
+    position: relative;
+    text-indent: -9999px;
+    top: 5px;
+    width: 17px;
+    color: black;
+  }
+  nav a {
+    background: no-repeat scroll 0 0 transparent;
+    height: 16px;
+    left: -50px;
+    position: absolute;
+    text-indent: -9999px;
+    top: 5px;
+    width: 17px;
+  }
+}
+
+form input {
+  float: right;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: none repeat scroll 0 0 transparent;
+  border-color: -moz-use-text-color -moz-use-text-color #CCCCCC;
+  border-image: none;
+  border-style: none none solid;
+  border-width: 0 0 1px;
+  color: #888888;
+  font: 11px / 11px Century Gothic, Helvetica, Arial, sans-serif;
+  height: 10px;
+  margin-top: 12px;
+  padding: 0 8px 6px;
+  width: 100px;
+}
