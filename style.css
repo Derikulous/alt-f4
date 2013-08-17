@@ -16,40 +16,53 @@ header {
 display: block;
 position: relative;
 text-align: center;
-font-size: 14px;
-font-family: "Quattrocento", Century Gothic;
 color:#999999;
-margin: 0px auto;
-padding: 0px auto;
+white-space: nowrap;
 }
 
-#nav a {
-    font-size: 14px;
+#nav .topnav {
+    line-height: 25px;
+    text-shadow:none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
     font-family: Century Gothic;
     color: #999999;
-    padding: 25px;
-    center: 0px;
+    letter-spacing: 0.1em;
+    padding: -10px;
+    margin: 20px;
     position: relative;
     text-indent: -9999px;
     top: 10px;
+    transition: all 0.3s ease 0s
 }
 
-#nav>a {
-    margin-top: 5px;
-    font-family: Century Gothic;
-    font-size: 15px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #888;
-    -webkit-transition: color .2s ease-in;
-    -moz-transition: color .2s ease-in;
-    -ms-transition: color .2s ease-in;
-    -o-transition: color .2s ease-in;
-    transition: color .2s ease-in;
+a.topnav#About:hover{
+  color:red;
 }
 
-#nav:hover>a {
-    color: #f7a9e5;
+a.topnav#Contact:hover{
+  color:red;
+}
+
+a.topnav#Twitter:hover{
+  color:red;
+}
+
+a.topnav#Facebook:hover{
+  color:red;
+}
+
+a.topnav#Links:hover{
+  color:red;
+}
+
+a.topnav#Email:hover{
+  color:red;
+}
+
+a.topnav#RSS:hover{
+  color:red;
 }
 
 #logo {
@@ -122,7 +135,7 @@ height: 12px;
 width: 12px;
 background: rgba(50, 50, 50, .5);
 border-radius: 7px;
-z-index: 100;
+z-index: 900;
 border:1px solid #777;
 }
 
